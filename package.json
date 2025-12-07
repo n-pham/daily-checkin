@@ -1,0 +1,17 @@
+{
+  "name": "daily-checkin",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js",
+    "build": "zip -r build/lambda.zip src node_modules package.json"
+  },
+  "dependencies": {
+    "@aws/durable-execution-sdk-js": "^1.0.0"
+  },
+  "devDependencies": {
+    "jest": "^29.0.0",
+    "express": "^4.18.2"
+  }
+}
